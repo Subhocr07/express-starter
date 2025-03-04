@@ -2,9 +2,9 @@ import express from "express";
 import cors from "cors";
 import morgan from "morgan";
 import helmet from "helmet";
-import connectDB from "./config/db";
-import routes from "./routes";
-import errorHandler from "./middleware/error.middleware";
+import connectDB from "./config/db.ts";
+import routes from "./routes/index.ts";
+import errorHandler from "./middleware/error.middleware.ts";
 
 const app = express();
 
